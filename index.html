@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hasan Güzeç — Game Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg1: #e6e6f0;
+      --bg2: #d0d4f0;
+      --fg: #7a6ff0;
+      --accent: #9c88ff;
+      --text: #2d2d3a;
+    }
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', monospace;
+      background: linear-gradient(135deg, var(--bg1), var(--bg2));
+      color: var(--text);
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 100px 20px 50px;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      color: var(--fg);
+      text-shadow: 0 0 8px rgba(122, 111, 240, 0.2);
+      margin-bottom: 20px;
+    }
+    header p {
+      font-size: 0.75rem;
+      max-width: 600px;
+      margin: 0 auto;
+      color: #444;
+    }
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .section-title {
+      color: var(--fg);
+      margin-bottom: 30px;
+      font-size: 1rem;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .project {
+      background: rgba(255, 255, 255, 0.3);
+      padding: 20px;
+      border-radius: 12px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+    .project:hover {
+      transform: scale(1.03);
+    }
+    .project h3 {
+      color: var(--accent);
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+    }
+    .project p {
+      font-size: 0.6rem;
+      color: #555;
+    }
+    .about {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 0.7rem;
+      color: #444;
+      line-height: 1.6;
+    }
+    .contact {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 0.8rem;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.6rem;
+      color: #666;
+      border-top: 1px solid rgba(0,0,0,0.1);
+      background: rgba(255,255,255,0.4);
+      backdrop-filter: blur(4px);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hasan Güzeç</h1>
+    <p>Bağımsız oyun geliştiricisi. Strateji, labirent ve bulmaca temalı oyunlar tasarlıyorum.<br>
+      Unreal Engine & HTML5 ile projeler geliştiriyorum.</p>
+  </header>
+
+  <section id="projects">
+    <h2 class="section-title">🎮 Projeler</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Maze Runner</h3>
+        <p>Yumuşak neon atmosferli, stratejik bir labirent oyunu. Mobil uyumlu, adil oynanış dinamiklerine sahip.</p>
+      </div>
+      <div class="project">
+        <h3>Yeni Oyunlar</h3>
+        <p>Gelecekte yayınlanacak oyunlar üzerinde çalışıyorum. Detaylar yakında paylaşılacak.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">👾 Hakkımda</h2>
+    <div class="about">
+      <p>Merhaba! Ben Hasan Güzeç, bağımsız bir oyun geliştiricisiyim. Küçük ama derin strateji ve bulmaca temalı oyunlar yaratmayı seviyorum.
+      Unreal Engine, Blender, HTML5 ve JavaScript ile projeler geliştiriyorum.
+      Amacım, oyunculara zorluk ve keyfi dengeli bir şekilde sunan özgün oyun deneyimleri tasarlamak.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">📬 İletişim</h2>
+    <div class="contact">
+      <a href="mailto:sempogames@gmail.com">📧 sempogames@gmail.com</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Hasan Güzeç — Sempo Games
+  </footer>
+</body>
+</html>
